@@ -33,7 +33,7 @@ class MostimaConfig:
         with open(config_path, "rb") as f:
             state.config = tomli.load(f)
 
-    def get_config(self) -> Config:
+    def get(self) -> Config:
         return state.config
 
     def update_config(self):
